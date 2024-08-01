@@ -1,0 +1,78 @@
+import { makeStyles } from "@mui/styles";
+import fedexdice from "../../../gallery/fedexdice.jpg";
+
+export const useStyles = makeStyles((theme) => ({
+  root: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundImage: `url(${fedexdice})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "100vh",
+    position: "relative",
+  },
+  form: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "10px",
+    backgroundColor: "white",
+    padding: "20px",
+    borderRadius: "25px",
+    transition: ".4s ease-in-out",
+    boxShadow: "rgba(0, 0, 0, 0.4) 1px 1px 2px",
+    "&:hover": {
+      transform: "translateX(-0.5em) translateY(-0.5em)",
+      border: "1px solid #171717",
+      boxShadow: "10px 10px 0px purple",
+    },
+    zIndex: 1,
+  },
+  header: {
+    color: "black",
+    paddingBottom: "2rem",
+    textAlign: "center",
+    fontWeight: "bold",
+  },
+  input: {
+    borderRadius: "5px",
+    border: "1px solid whitesmoke",
+    backgroundColor: "whitesmoke",
+    outline: "none",
+    padding: "0.7rem",
+    transition: ".4s ease-in-out",
+    "&:focus": {
+      background: "#ffffff",
+      boxShadow: "inset 2px 5px 10px rgba(0,0,0,0.3)",
+    },
+  },
+  submitBtn: {
+    marginTop: "1em",
+    alignSelf: "center",
+    padding: "0.7em",
+    paddingLeft: "1em",
+    paddingRight: "1em",
+    borderRadius: "10px",
+    border: "none",
+    color: "black",
+    backgroundColor: "#e600e6",
+    transition: ".4s ease-in-out",
+    boxShadow: "rgba(0, 0, 0, 0.4) 1px 1px 1px",
+  },
+  imgContainer: {
+    position: "absolute",
+    bottom: "20px",
+    left: 0,
+    right: 0,
+    textAlign: "center",
+    display: "flex",
+    justifyContent: "center",
+  },
+  img: {
+    mixBlendMode: "multiply",
+    height: "200px",
+    width: "200px",
+  },
+}));
